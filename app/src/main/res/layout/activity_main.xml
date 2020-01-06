@@ -34,49 +34,54 @@
 
     </LinearLayout>
    <Button
+       android:id="@+id/bt"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:text="CALCULATE"
        />
     <CheckBox
+        android:id="@+id/checkbx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="I Agree"
         android:checked="true"
         />
-    <LinearLayout
-        android:layout_width="match_parent"
+    <RadioGroup
+        android:id="@+id/ogOperater"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginLeft="20dp"
-        >
+        android:orientation="horizontal">
+
         <RadioButton
+            android:id="@+id/rdAddition"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="+"
             android:layout_marginLeft="10dp"
-            android:checked="true"
             />
         <RadioButton
+            android:id="@+id/rdSubtraction"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="-"
             android:layout_marginLeft="10dp"
             />
         <RadioButton
+            android:id="@+id/rdmultiplication"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="*"
             android:layout_marginLeft="10dp"
             />
         <RadioButton
+            android:id="@+id/rdDivision"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="/"
             android:layout_marginLeft="10dp"
             />
 
-    </LinearLayout>
+    </RadioGroup>
 
 
 </LinearLayout>
